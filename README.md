@@ -2,3 +2,4 @@
 IS 477 Group Semester Project
 Brady Johnson
 Ariston Liu
+Sophia Kostov
