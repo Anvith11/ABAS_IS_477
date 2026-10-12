@@ -12,6 +12,18 @@ Anvith Mulpuri (Timeline and workflow): Builds the project timeline and the auto
 ### Research or Business Question: 
 Across Chicago's community areas from 2019 to 2023, how are traffic congestion, speeding violations, and resident reported infrastructure problems associated with how often traffic crashes happen and how severe they are, and which areas should the city prioritize for traffic safety funding based on these factors?
 
+### Dataset Research
+For this project, we initially found four datasets from the City of Chicago public records. These are accessible, easy to download, and easy to understand data sets. The common attribute amongst all dataset is location and date.
+
+Crashes (https://data.cityofchicago.org/Transportation/Traffic-Crashes-Crashes/85ca-t3if/about_data): This dataset gives us the location, time, severity and cause of the crash. This is the backbone to our research.
+
+Congestion (https://data.cityofchicago.org/Transportation/Chicago-Traffic-Tracker-Historical-Congestion-Esti/sxs8-h27x/about_data) This dataset tracks how busy certain locations are in Chicago. This will allow us to figure out volume calculations and determine if crashes just occur where people drive more frequently.
+
+Speed Camera Violations (https://data.cityofchicago.org/Transportation/Speed-Camera-Violations/hhkd-xvj4/data_preview): This dataset says the time, place, location, and speed of speed camera violations in Chicago. This will allow us to track common speeding to zones to see if speed is a factor in common crash areas.
+
+311 Infrastructure Service Requests (https://data.cityofchicago.org/d/v6vf-nfxy): This data set shows location, date, and what type of requests were submitted for the roads of Chicago. This will allow us to see if low maintence zones have more crashes.
+
+
 ## Integration: 
 Integration of the four datasets will be done using the Chicago community area and month as the common spatiotemporal unit between 2019 and 2023. The four datasets will be cleaned individually with respect to date standardization, location, missing data, and other relevant attributes. Traffic crashes will be aggregated according to community area and month for crash counts and crash intensity, while traffic congestion data will be aggregated accordingly. The speed camera violations will be aggregated on the basis of the month and linked to the respective community areas, while 311 service requests related to roads and infrastructure will be filtered out and similarly aggregated. The four datasets will then be combined into one single integrated dataset using community area and month as the major linking fields. In the process of integration, accuracy, completeness, timeliness, and consistency of the four datasets will be checked. Similarly, a quality check will be performed post-integration to assess whether the datasets have been integrated properly and to find any records or locations which have poor data coverage. Each part of the process, namely data acquisition, quality check, data cleaning, data integration and analysis will be done by separate Python scripts; however, there will also be a run-all Python script which will make this project a reproducible workflow. All the Python scripts will be using relative paths and will document the required dependencies for them to run from a fresh checkout of the GitHub repository without having to make any manual modifications to it.
 
