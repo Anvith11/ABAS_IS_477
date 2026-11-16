@@ -78,5 +78,3 @@ For Milestone 3, I created the initial status report and committed the [workflow
 ## Individual Contribution Summary: Brady Johnson
 
 For Milestone 3, I extracted the datasets from the Chicago datasets website. I then added them into the data folder so Sophia could start cleaning them. Before she cleaned them, I created a data profile so she know how to start cleaning. I mapped out what was good in each data set and how the common link was formatted in each data set. More specifically, I did the data acquisition and the data profiling.
-
-<!-- Brady: Add and commit your own Milestone 3 contribution summary here before the release. -->
